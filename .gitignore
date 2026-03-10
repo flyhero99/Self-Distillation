@@ -6,3 +6,8 @@ wandb/
 results/
 bsub_outputs/
 .hyperparameter_search_scripts_main/
+
+benchmark/
+logs/
+output*
+pred_programs*

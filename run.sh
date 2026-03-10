@@ -1,0 +1,12 @@
+CUDA_VISIBLE_DEVICES=2 python my_main.py \
+  --model_name Qwen/Qwen3-4B-Instruct-2507 \
+  --train_data_path data/successful_teacher_trajectories/all_trajectories_merged.jsonl \
+  --output_dir output_qwen3-4b-instruct-2507 \
+  --learning_rate 2e-5 \
+  --num_train_epochs 3 \
+  --num_prompts_per_batch 32 \
+  --num_generations 8 \
+  --ref_model_mixup_alpha 0.01 \
+  --seed 42 \
+  --max_prompt_length 8192 \
+  --max_completion_length 4096
